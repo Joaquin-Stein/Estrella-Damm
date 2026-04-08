@@ -345,6 +345,14 @@
       display: flex; align-items: center; justify-content: center;
       font-size: 1.4rem;
       flex-shrink: 0;
+      overflow: hidden;
+    }
+    .avatar img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      filter: grayscale(100%);
+      display: block;
     }
 
     .person-name {
@@ -751,21 +759,21 @@
       <!-- People (my style) -->
       <div class="people-grid">
         <div class="person">
-          <div class="avatar">🧑‍🍳</div>
+          <div class="avatar"><img src="joaquin.jpg" alt="Joaquín Stein"></div>
           <div>
             <div class="person-name">Joaquín Stein</div>
             <div class="person-role">Co-fundador</div>
           </div>
         </div>
         <div class="person">
-          <div class="avatar">👨‍🍳</div>
+          <div class="avatar"><img src="maxime.jpg" alt="Maxime Sonneveld"></div>
           <div>
             <div class="person-name">Maxime Sonneveld</div>
             <div class="person-role">Co-fundador</div>
           </div>
         </div>
         <div class="person">
-          <div class="avatar">🍳</div>
+          <div class="avatar"><img src="jose.jpg" alt="Jose Iruleguy"></div>
           <div>
             <div class="person-name">Jose Iruleguy</div>
             <div class="person-role">Co-fundador</div>
